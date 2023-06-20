@@ -1,0 +1,185 @@
+A1. Example that creates variables of different data types:
+
+
+# (i) string
+my_string = "Hello, PW!"
+
+# (ii) list
+my_list = [1, 2, 3, 4, 5]
+
+# (iii) float
+my_float = 3.14
+
+(iv) tuple
+my_tuple = (10, 20, 30, 40, 50)
+
+
+A2. The data types of the given variables are as follows:
+
+(i) `var1` is a string.
+(ii) `var2` is a string.
+(iii) `var3` is a list.
+(iv) `var4` is a float.
+
+A3. Operators:
+
+(i) `/` - Division Operator:
+The `/` operator is used for division. It performs floating-point division, meaning it returns the quotient as a float.
+
+Example:
+```python
+a = 10
+b = 3
+result = a / b
+print(result)  # Output: 3.3333333333333335
+```
+
+(ii) `%` - Modulo Operator:
+The `%` operator returns the remainder of the division operation. It can be used to check divisibility or extract digits.
+
+Example:
+
+a = 10
+b = 3
+result = a % b
+print(result)  # Output: 1
+
+
+(iii) `//` - Floor Division Operator:
+The `//` operator performs integer division and returns the largest possible integer quotient.
+
+Example:
+
+a = 10
+b = 3
+result = a // b
+print(result)  # Output: 3
+
+
+(iv) `**` - Exponentiation Operator:
+The `**` operator is used for exponentiation. It raises the first operand to the power of the second operand.
+
+Example:
+
+a = 2
+b = 3
+result = a ** b
+print(result)  # Output: 8
+
+
+A4. Example of creating a list of length 10 with multiple types of data and printing each element along with its data type using a for loop:
+
+
+my_list = [1, 'Hello', 3.14, True, [1, 2, 3], {'name': 'John'}, (1, 2, 3), None, 'world', False]
+
+for item in my_list:
+    print(item, type(item))
+
+
+Output:
+
+1 <class 'int'>
+Hello <class 'str'>
+3.14 <class 'float'>
+True <class 'bool'>
+[1, 2, 3] <class 'list'>
+{'name': 'John'} <class 'dict'>
+(1, 2, 3) <class 'tuple'>
+None <class 'NoneType'>
+world <class 'str'>
+False <class 'bool'>
+
+
+A5. Example using a while loop to check if a number A is divisible by number B and calculate how many times it can be divided:
+
+
+A = 20
+B = 4
+count = 0
+
+while A % B == 0:
+    A = A // B
+    count += 1
+
+print("A is divisible by B", count, "times")
+
+
+Output:
+
+A is divisible by B 2 times
+
+
+A6. Example that creates a list containing 25 integer data and uses a for loop with an if-else condition to check if each element is divisible by 3:
+
+
+my_list = list(range(1, 26))
+
+for num in
+
+ my_list:
+    if num % 3 == 0:
+        print(num, "is divisible by 3")
+    else:
+        print(num, "is not divisible by 3")
+
+
+Output:
+
+1 is not divisible by 3
+2 is not divisible by 3
+3 is divisible by 3
+4 is not divisible by 3
+5 is not divisible by 3
+6 is divisible by 3
+7 is not divisible by 3
+8 is not divisible by 3
+9 is divisible by 3
+10 is not divisible by 3
+11 is not divisible by 3
+12 is divisible by 3
+13 is not divisible by 3
+14 is not divisible by 3
+15 is divisible by 3
+16 is not divisible by 3
+17 is not divisible by 3
+18 is divisible by 3
+19 is not divisible by 3
+20 is not divisible by 3
+21 is divisible by 3
+22 is not divisible by 3
+23 is not divisible by 3
+24 is divisible by 3
+25 is not divisible by 3
+
+
+A7. In Python, mutable and immutable are properties of objects.
+
+Mutable Data Types:
+Mutable data types can be modified after they are created. Any changes made to the object will be reflected in its memory location. Examples of mutable data types in Python include lists, dictionaries, and sets.
+
+Example:
+
+my_list = [1, 2, 3]
+my_list.append(4)
+print(my_list)  # Output: [1, 2, 3, 4]
+
+my_dict = {'name': 'John'}
+my_dict['age'] = 25
+print(my_dict)  # Output: {'name': 'John', 'age': 25}
+
+
+Immutable Data Types:
+Immutable data types cannot be modified once they are created. Any operation that appears to modify an immutable object actually creates a new object. Examples of immutable data types in Python include strings, integers, floats, and tuples.
+
+Example:
+
+my_string = "Hello"
+my_string = my_string + " World"
+print(my_string)  # Output: Hello World
+
+my_tuple = (1, 2, 3)
+new_tuple = my_tuple + (4,)
+print(new_tuple)  # Output: (1, 2, 3, 4)
+
+
+In both examples, the original objects (string, tuple) were not modified. Instead, new objects were created and assigned to the same variable names.
